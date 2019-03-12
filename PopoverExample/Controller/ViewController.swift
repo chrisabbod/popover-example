@@ -9,8 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-    //ADD THE OTHER DATE COCOAPOD WE LIKED AND MAKE IT POP UP FROM A DIFFERENT BUTTON
-    //NEED TO SEE HOW TO CUSTOMIZE THIS CALENDAR APP
+
     @IBOutlet weak var showButton: UIButton!
     
     override func viewDidLoad() {
@@ -62,27 +61,24 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
             }
         }
     }
-
-    @IBAction func showDatePickerPopover(_ sender: UIBarButtonItem) {
-        
+    
+    @IBAction func showUIDatePickerPopover(_ sender: UIBarButtonItem) {
         let button = sender
         
         let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
-        let datePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "DatePickerPopover") as? DatePickerPopover
-        datePickerPopover?.modalPresentationStyle = .popover
+        let uiDatePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "UIDatePickerPopover") as? UIDatePickerPopover
+        uiDatePickerPopover?.modalPresentationStyle = .popover
         
-        if let popoverPresentationController = datePickerPopover?.popoverPresentationController {
+        if let popoverPresentationController = uiDatePickerPopover?.popoverPresentationController {
             popoverPresentationController.permittedArrowDirections = .up
             popoverPresentationController.sourceView = self.view
             popoverPresentationController.barButtonItem = button
             popoverPresentationController.delegate = self
             
-            if let popoverController = datePickerPopover {
+            if let popoverController = uiDatePickerPopover {
                 present(popoverController, animated: true, completion: nil)
             }
         }
-        
-        
     }
     
     //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller

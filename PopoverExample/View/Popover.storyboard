@@ -59,20 +59,32 @@
             </objects>
             <point key="canvasLocation" x="1470" y="-663"/>
         </scene>
-        <!--DatePicker-->
-        <scene sceneID="IJH-zL-h9R">
+        <!--Date Picker Popover-->
+        <scene sceneID="lzv-i7-RXD">
             <objects>
-                <viewController storyboardIdentifier="DatePickerPopover" title="DatePicker" id="upc-44-W6o" customClass="DatePickerPopover" customModule="PopoverExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jKB-hX-zfo">
+                <viewController storyboardIdentifier="UIDatePickerPopover" id="xQS-SL-D7o" customClass="UIDatePickerPopover" customModule="PopoverExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="58n-Xy-OU4">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-ca-01J">
+                                <rect key="frame" x="352" y="575" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="574114814.32189298">
+                                    <!--2019-03-12 20:20:14 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Gd5-ci-YWx"/>
+                        <constraints>
+                            <constraint firstItem="a3c-ca-01J" firstAttribute="centerY" secondItem="58n-Xy-OU4" secondAttribute="centerY" id="Duh-Jn-WqD"/>
+                            <constraint firstItem="a3c-ca-01J" firstAttribute="centerX" secondItem="58n-Xy-OU4" secondAttribute="centerX" id="lYl-cb-NMp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yz0-GY-FkM"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mzO-op-pyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHU-32-7OT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2173" y="-663"/>
+            <point key="canvasLocation" x="2156" y="-663"/>
         </scene>
     </scenes>
 </document>

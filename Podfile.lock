@@ -1,24 +1,16 @@
 PODS:
-  - DatePicker (1.0.1):
-    - Extended (~> 1.0.4)
-  - Extended (1.0.5)
   - JBDatePicker (1.2.5)
 
 DEPENDENCIES:
-  - DatePicker
   - JBDatePicker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - DatePicker
-    - Extended
     - JBDatePicker
 
 SPEC CHECKSUMS:
-  DatePicker: adebbc11d7e198985f376e4943f844860bf019db
-  Extended: c463225e0c29b2823847866c1b106827772ac678
   JBDatePicker: 0e791c8a79c49b0d37decea28ba147515bf5cfca
 
-PODFILE CHECKSUM: 6cb3978dfa8a70768c122e74ce9a15fa6bba5309
+PODFILE CHECKSUM: e64461ffe5f6555549adde68aa5c4f5aafb08c00
 
 COCOAPODS: 1.5.3

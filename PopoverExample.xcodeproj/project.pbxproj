@@ -19,7 +19,7 @@
 		A508A90522375FEF00821973 /* PopoverContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A90422375FEF00821973 /* PopoverContentController.swift */; };
 		A508A90722376E6F00821973 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A508A90622376E6F00821973 /* Popover.storyboard */; };
 		A508A90B2237714E00821973 /* JBDatePickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A90A2237714E00821973 /* JBDatePickerPopover.swift */; };
-		A508A90D223843FD00821973 /* DatePickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A90C223843FD00821973 /* DatePickerPopover.swift */; };
+		A508A91122384D6F00821973 /* UIDatePickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A91022384D6F00821973 /* UIDatePickerPopover.swift */; };
 		C27EB0F59C410B3027F7F1D9 /* Pods_PopoverExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23716FE0EED528861F99B802 /* Pods_PopoverExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,7 @@
 		A508A90422375FEF00821973 /* PopoverContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentController.swift; sourceTree = "<group>"; };
 		A508A90622376E6F00821973 /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 		A508A90A2237714E00821973 /* JBDatePickerPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JBDatePickerPopover.swift; sourceTree = "<group>"; };
-		A508A90C223843FD00821973 /* DatePickerPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPopover.swift; sourceTree = "<group>"; };
+		A508A91022384D6F00821973 /* UIDatePickerPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerPopover.swift; sourceTree = "<group>"; };
 		A80CD4576C33B4C3B104EEA3 /* Pods_PopoverExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopoverExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCB2F8395E0E53FD4D2FB21 /* Pods-PopoverExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopoverExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample.release.xcconfig"; sourceTree = "<group>"; };
 		CEC83EDE9E2EAFB5DF90A27F /* Pods-PopoverExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopoverExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopoverExampleTests/Pods-PopoverExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				A508A8D822375EC800821973 /* ViewController.swift */,
 				A508A90422375FEF00821973 /* PopoverContentController.swift */,
 				A508A90A2237714E00821973 /* JBDatePickerPopover.swift */,
-				A508A90C223843FD00821973 /* DatePickerPopover.swift */,
+				A508A91022384D6F00821973 /* UIDatePickerPopover.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -334,16 +334,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PopoverExample/Pods-PopoverExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DatePicker/DatePicker.framework",
-				"${BUILT_PRODUCTS_DIR}/Extended/Extended.framework",
 				"${BUILT_PRODUCTS_DIR}/JBDatePicker/JBDatePicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DatePicker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Extended.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JBDatePicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +423,8 @@
 				A508A90522375FEF00821973 /* PopoverContentController.swift in Sources */,
 				A508A90B2237714E00821973 /* JBDatePickerPopover.swift in Sources */,
 				A508A8D922375EC800821973 /* ViewController.swift in Sources */,
+				A508A91122384D6F00821973 /* UIDatePickerPopover.swift in Sources */,
 				A508A8D722375EC800821973 /* AppDelegate.swift in Sources */,
-				A508A90D223843FD00821973 /* DatePickerPopover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
