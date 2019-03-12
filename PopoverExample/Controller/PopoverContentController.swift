@@ -9,12 +9,12 @@
 import UIKit
 
 //Protocol Declaration
-protocol PopoverContentControllerDelegate:class {
+protocol PopoverContentControllerDelegate: class {
     func popoverContent(controller:PopoverContentController, didselectItem name:String)
 }
 //End Protocol
 
-class PopoverContentController:UIViewController {
+class PopoverContentController: UIViewController {
     let datasourceArray = ["Car", "Bike", "Bus", "Van", "bicycle"]
     static let CELL_REUSE_ID = "POPOVER_CELL_REUSE_ID"
     var delegate:PopoverContentControllerDelegate? //declare a delegate

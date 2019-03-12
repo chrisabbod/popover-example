@@ -34,6 +34,9 @@
                                     <navigationItem title="Popover Example" id="naR-TZ-vrR">
                                         <barButtonItem key="rightBarButtonItem" title="Date" id="4Dr-cF-eTJ">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="showDatePopoverAction:" destination="BYZ-38-t0r" id="Ci3-aQ-Mqm"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

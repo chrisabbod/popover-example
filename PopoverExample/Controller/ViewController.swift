@@ -41,6 +41,28 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         }
     }
     
+    @IBAction func showDatePopoverAction(_ sender: Any) {
+        //get the button frame
+        let button = sender as? UIButton
+        let buttonFrame = button?.frame ?? CGRect.zero
+        
+        //Configure the presentation controller
+        let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
+        let popoverContentController = popoverStoryboard.instantiateViewController(withIdentifier: "DatePickerPopover") as? DatePickerPopover
+        popoverContentController?.modalPresentationStyle = .popover
+        
+        if let popoverPresentationController = popoverContentController?.popoverPresentationController {
+            popoverPresentationController.permittedArrowDirections = .up
+            popoverPresentationController.sourceView = self.view
+            popoverPresentationController.sourceRect = buttonFrame
+            popoverPresentationController.delegate = self
+            
+            if let popoverController = popoverContentController {
+                present(popoverController, animated: true, completion: nil)
+            }
+        }
+    }
+    
     //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
