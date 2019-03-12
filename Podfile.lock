@@ -1,0 +1,16 @@
+PODS:
+  - JBDatePicker (1.2.5)
+
+DEPENDENCIES:
+  - JBDatePicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JBDatePicker
+
+SPEC CHECKSUMS:
+  JBDatePicker: 0e791c8a79c49b0d37decea28ba147515bf5cfca
+
+PODFILE CHECKSUM: 4b946ffd24ede1597b70f1d747f503c029f1b1ff
+
+COCOAPODS: 1.5.3

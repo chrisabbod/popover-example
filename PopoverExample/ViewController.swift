@@ -24,7 +24,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         
         //Configure the presentation controller
         let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
-        //let viewcontroller : UIViewController = mainView.instantiateViewControllerWithIdentifier("iPhone5") as UIViewController
         let popoverContentController = popoverStoryboard.instantiateViewController(withIdentifier: "PopoverContentController") as? PopoverContentController
         popoverContentController?.modalPresentationStyle = .popover
         
