@@ -17,5 +17,8 @@ class UIDatePickerPopover: UIViewController {
         // Drawing code
     }
     */
-
+    
+    @IBAction func selectDateButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -68,12 +68,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
         let uiDatePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "UIDatePickerPopover") as? UIDatePickerPopover
         uiDatePickerPopover?.modalPresentationStyle = .popover
+        uiDatePickerPopover?.preferredContentSize = CGSize(width: 400, height: 400)
         
         if let popoverPresentationController = uiDatePickerPopover?.popoverPresentationController {
             popoverPresentationController.permittedArrowDirections = .up
             popoverPresentationController.sourceView = self.view
             popoverPresentationController.barButtonItem = button
             popoverPresentationController.delegate = self
+            popoverPresentationController.backgroundColor = UIColor.gray
             
             if let popoverController = uiDatePickerPopover {
                 present(popoverController, animated: true, completion: nil)

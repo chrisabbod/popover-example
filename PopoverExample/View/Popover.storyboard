@@ -73,11 +73,22 @@
                                     <!--2019-03-12 20:20:14 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4C-Tm-mnj">
+                                <rect key="frame" x="428" y="799" width="168" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="Select Date">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectDateButton:" destination="xQS-SL-D7o" eventType="touchUpInside" id="yzW-rI-hRQ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="a3c-ca-01J" firstAttribute="centerY" secondItem="58n-Xy-OU4" secondAttribute="centerY" id="Duh-Jn-WqD"/>
+                            <constraint firstItem="Q4C-Tm-mnj" firstAttribute="top" secondItem="a3c-ca-01J" secondAttribute="bottom" constant="8" id="eb6-Oi-Q6m"/>
                             <constraint firstItem="a3c-ca-01J" firstAttribute="centerX" secondItem="58n-Xy-OU4" secondAttribute="centerX" id="lYl-cb-NMp"/>
+                            <constraint firstItem="Q4C-Tm-mnj" firstAttribute="centerX" secondItem="58n-Xy-OU4" secondAttribute="centerX" id="lcN-IO-POc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yz0-GY-FkM"/>
                     </view>
