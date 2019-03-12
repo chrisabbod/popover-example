@@ -14,6 +14,7 @@
 		A508A8E122375EC900821973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A508A8DF22375EC900821973 /* LaunchScreen.storyboard */; };
 		A508A8EC22375EC900821973 /* PopoverExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A8EB22375EC900821973 /* PopoverExampleTests.swift */; };
 		A508A8F722375EC900821973 /* PopoverExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A8F622375EC900821973 /* PopoverExampleUITests.swift */; };
+		A508A90522375FEF00821973 /* PopoverContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A90422375FEF00821973 /* PopoverContentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A508A8F222375EC900821973 /* PopoverExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopoverExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A508A8F622375EC900821973 /* PopoverExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverExampleUITests.swift; sourceTree = "<group>"; };
 		A508A8F822375EC900821973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A508A90422375FEF00821973 /* PopoverContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A508A8DD22375EC900821973 /* Assets.xcassets */,
 				A508A8DF22375EC900821973 /* LaunchScreen.storyboard */,
 				A508A8E222375EC900821973 /* Info.plist */,
+				A508A90422375FEF00821973 /* PopoverContentController.swift */,
 			);
 			path = PopoverExample;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A508A90522375FEF00821973 /* PopoverContentController.swift in Sources */,
 				A508A8D922375EC800821973 /* ViewController.swift in Sources */,
 				A508A8D722375EC800821973 /* AppDelegate.swift in Sources */,
 			);
