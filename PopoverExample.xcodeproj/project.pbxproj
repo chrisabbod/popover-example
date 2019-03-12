@@ -132,13 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				A508A8D622375EC800821973 /* AppDelegate.swift */,
-				A508A8D822375EC800821973 /* ViewController.swift */,
-				A508A8DA22375EC800821973 /* Main.storyboard */,
+				A508A9092237701D00821973 /* View */,
+				A508A9082237701400821973 /* Controller */,
 				A508A8DD22375EC900821973 /* Assets.xcassets */,
 				A508A8DF22375EC900821973 /* LaunchScreen.storyboard */,
 				A508A8E222375EC900821973 /* Info.plist */,
-				A508A90422375FEF00821973 /* PopoverContentController.swift */,
-				A508A90622376E6F00821973 /* Popover.storyboard */,
 			);
 			path = PopoverExample;
 			sourceTree = "<group>";
@@ -159,6 +157,24 @@
 				A508A8F822375EC900821973 /* Info.plist */,
 			);
 			path = PopoverExampleUITests;
+			sourceTree = "<group>";
+		};
+		A508A9082237701400821973 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A508A8D822375EC800821973 /* ViewController.swift */,
+				A508A90422375FEF00821973 /* PopoverContentController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A508A9092237701D00821973 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A508A8DA22375EC800821973 /* Main.storyboard */,
+				A508A90622376E6F00821973 /* Popover.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CDA61E63A6F232994FDC2647 /* Frameworks */ = {
