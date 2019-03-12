@@ -28,11 +28,24 @@
                                     <action selector="showPopoverButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfW-IF-OaZ"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWG-mV-a77">
+                                <rect key="frame" x="0.0" y="20" width="1366" height="50"/>
+                                <items>
+                                    <navigationItem title="Popover Example" id="naR-TZ-vrR">
+                                        <barButtonItem key="rightBarButtonItem" title="Date" id="4Dr-cF-eTJ">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="coI-93-xTB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ivj-ps-8AS"/>
+                            <constraint firstItem="PWG-mV-a77" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SDh-Vx-YYT"/>
                             <constraint firstItem="coI-93-xTB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mH9-ev-3Oy"/>
+                            <constraint firstItem="PWG-mV-a77" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r8o-vJ-v1A"/>
+                            <constraint firstItem="PWG-mV-a77" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="taf-qZ-Q8M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
