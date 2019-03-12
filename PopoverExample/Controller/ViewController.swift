@@ -48,7 +48,27 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         
         //Configure the presentation controller
         let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
-        let datePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "JBDatePickerPopover") as? JBDatePickerPopover
+        let jBDatePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "JBDatePickerPopover") as? JBDatePickerPopover
+        jBDatePickerPopover?.modalPresentationStyle = .popover
+        
+        if let popoverPresentationController = jBDatePickerPopover?.popoverPresentationController {
+            popoverPresentationController.permittedArrowDirections = .up
+            popoverPresentationController.sourceView = self.view
+            popoverPresentationController.barButtonItem = button
+            popoverPresentationController.delegate = self
+            
+            if let popoverController = jBDatePickerPopover {
+                present(popoverController, animated: true, completion: nil)
+            }
+        }
+    }
+
+    @IBAction func showDatePickerPopover(_ sender: UIBarButtonItem) {
+        
+        let button = sender
+        
+        let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
+        let datePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "DatePickerPopover") as? DatePickerPopover
         datePickerPopover?.modalPresentationStyle = .popover
         
         if let popoverPresentationController = datePickerPopover?.popoverPresentationController {
@@ -61,8 +81,10 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
                 present(popoverController, animated: true, completion: nil)
             }
         }
+        
+        
     }
-
+    
     //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none

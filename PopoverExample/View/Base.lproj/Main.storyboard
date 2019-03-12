@@ -32,7 +32,13 @@
                                 <rect key="frame" x="0.0" y="20" width="1366" height="50"/>
                                 <items>
                                     <navigationItem title="Popover Example" id="naR-TZ-vrR">
-                                        <barButtonItem key="rightBarButtonItem" title="Date" id="4Dr-cF-eTJ">
+                                        <barButtonItem key="leftBarButtonItem" title="DatePicker" id="dZ0-XF-HOI">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="showDatePickerPopover:" destination="BYZ-38-t0r" id="ir2-aZ-PL5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="JBDatePicker" id="4Dr-cF-eTJ">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="showDatePopoverAction:" destination="BYZ-38-t0r" id="Ci3-aQ-Mqm"/>

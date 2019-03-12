@@ -44,7 +44,7 @@
         <!--JBDatePickerPopover-->
         <scene sceneID="O21-PI-3mB">
             <objects>
-                <viewController storyboardIdentifier="JBDatePickerPopover" id="2gd-aK-jSx" userLabel="JBDatePickerPopover" customClass="JBDatePickerPopover" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JBDatePickerPopover" title="JBDatePicker" id="2gd-aK-jSx" userLabel="JBDatePickerPopover" customClass="JBDatePickerPopover" customModule="PopoverExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J0U-a0-3cd" userLabel="JBDatePicker" customClass="JBDatePickerView" customModule="JBDatePicker">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,12 +52,27 @@
                         <viewLayoutGuide key="safeArea" id="QNu-Kz-Mfc"/>
                     </view>
                     <connections>
-                        <outlet property="datePicker" destination="J0U-a0-3cd" id="cTz-97-LTL"/>
+                        <outlet property="jBDatePicker" destination="J0U-a0-3cd" id="Fpu-Qc-JH1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jky-qR-OD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1470" y="-663"/>
+        </scene>
+        <!--DatePicker-->
+        <scene sceneID="IJH-zL-h9R">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerPopover" title="DatePicker" id="upc-44-W6o" customClass="DatePickerPopover" customModule="PopoverExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jKB-hX-zfo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gd5-ci-YWx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzO-op-pyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173" y="-663"/>
         </scene>
     </scenes>
 </document>

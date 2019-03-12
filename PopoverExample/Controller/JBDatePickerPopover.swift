@@ -11,12 +11,12 @@ import JBDatePicker
 
 class JBDatePickerPopover: ViewController, JBDatePickerViewDelegate {
    
-    @IBOutlet var datePicker: JBDatePickerView!
+    @IBOutlet var jBDatePicker: JBDatePickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        datePicker.delegate = self
+        jBDatePicker.delegate = self
     }
     
     func didSelectDay(_ dayView: JBDatePickerDayView) {
