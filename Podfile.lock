@@ -1,24 +1,16 @@
 PODS:
-  - CalendarView (1.1.2):
-    - SwiftMoment (~> 0.1)
   - JBDatePicker (1.2.5)
-  - SwiftMoment (0.7)
 
 DEPENDENCIES:
-  - CalendarView
   - JBDatePicker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - CalendarView
     - JBDatePicker
-    - SwiftMoment
 
 SPEC CHECKSUMS:
-  CalendarView: 35d51b70586213604edec22a585d105273f6e191
   JBDatePicker: 0e791c8a79c49b0d37decea28ba147515bf5cfca
-  SwiftMoment: dc6dd27012e267819104cbb03f74ff9192dd0b42
 
-PODFILE CHECKSUM: 6aa096c79d2874d3a17515d4772557d95773af49
+PODFILE CHECKSUM: e64461ffe5f6555549adde68aa5c4f5aafb08c00
 
 COCOAPODS: 1.5.3
