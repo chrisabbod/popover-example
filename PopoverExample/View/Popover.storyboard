@@ -41,11 +41,11 @@
             </objects>
             <point key="canvasLocation" x="705" y="-663"/>
         </scene>
-        <!--Date Picker Popover-->
+        <!--JBDatePickerPopover-->
         <scene sceneID="O21-PI-3mB">
             <objects>
-                <viewController storyboardIdentifier="JBDatePickerPopover" id="2gd-aK-jSx" customClass="JBDatePickerPopover" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="J0U-a0-3cd" customClass="JBDatePickerView" customModule="JBDatePicker">
+                <viewController storyboardIdentifier="JBDatePickerPopover" id="2gd-aK-jSx" userLabel="JBDatePickerPopover" customClass="JBDatePickerPopover" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0U-a0-3cd" userLabel="JBDatePicker" customClass="JBDatePickerView" customModule="JBDatePicker">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
