@@ -7,6 +7,7 @@ target 'PopoverExample' do
 
   # Pods for PopoverExample
     pod 'JBDatePicker'
+    pod 'CalendarView'
 
   target 'PopoverExampleTests' do
     inherit! :search_paths
