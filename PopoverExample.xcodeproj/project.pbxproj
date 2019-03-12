@@ -15,6 +15,7 @@
 		A508A8EC22375EC900821973 /* PopoverExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A8EB22375EC900821973 /* PopoverExampleTests.swift */; };
 		A508A8F722375EC900821973 /* PopoverExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A8F622375EC900821973 /* PopoverExampleUITests.swift */; };
 		A508A90522375FEF00821973 /* PopoverContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A508A90422375FEF00821973 /* PopoverContentController.swift */; };
+		A508A90722376E6F00821973 /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A508A90622376E6F00821973 /* Popover.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A508A8F622375EC900821973 /* PopoverExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverExampleUITests.swift; sourceTree = "<group>"; };
 		A508A8F822375EC900821973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A508A90422375FEF00821973 /* PopoverContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentController.swift; sourceTree = "<group>"; };
+		A508A90622376E6F00821973 /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A508A8DF22375EC900821973 /* LaunchScreen.storyboard */,
 				A508A8E222375EC900821973 /* Info.plist */,
 				A508A90422375FEF00821973 /* PopoverContentController.swift */,
+				A508A90622376E6F00821973 /* Popover.storyboard */,
 			);
 			path = PopoverExample;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A508A90722376E6F00821973 /* Popover.storyboard in Resources */,
 				A508A8E122375EC900821973 /* LaunchScreen.storyboard in Resources */,
 				A508A8DE22375EC900821973 /* Assets.xcassets in Resources */,
 				A508A8DC22375EC800821973 /* Main.storyboard in Resources */,
