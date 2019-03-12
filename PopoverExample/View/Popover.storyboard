@@ -44,23 +44,11 @@
         <!--Date Picker Popover-->
         <scene sceneID="O21-PI-3mB">
             <objects>
-                <viewController storyboardIdentifier="DatePickerPopover" id="2gd-aK-jSx" customClass="DatePickerPopover" customModule="PopoverExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JBDatePickerPopover" id="2gd-aK-jSx" customClass="JBDatePickerPopover" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J0U-a0-3cd" customClass="JBDatePickerView" customModule="JBDatePicker">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose A Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9W-97-GdW">
-                                <rect key="frame" x="369.5" y="20" width="285" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="q9W-97-GdW" firstAttribute="centerX" secondItem="J0U-a0-3cd" secondAttribute="centerX" id="2ME-3u-TLW"/>
-                            <constraint firstItem="q9W-97-GdW" firstAttribute="top" secondItem="QNu-Kz-Mfc" secondAttribute="top" id="lom-qe-mz3"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QNu-Kz-Mfc"/>
                     </view>
                     <connections>

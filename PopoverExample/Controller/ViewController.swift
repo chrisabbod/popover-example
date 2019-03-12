@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-
+    //ADD THE OTHER DATE COCOAPOD WE LIKED AND MAKE IT POP UP FROM A DIFFERENT BUTTON
+    //NEED TO SEE HOW TO CUSTOMIZE THIS CALENDAR APP
     @IBOutlet weak var showButton: UIButton!
     
     override func viewDidLoad() {
@@ -47,7 +48,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         
         //Configure the presentation controller
         let popoverStoryboard: UIStoryboard = UIStoryboard(name: "Popover", bundle: nil)
-        let datePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "DatePickerPopover") as? DatePickerPopover
+        let datePickerPopover = popoverStoryboard.instantiateViewController(withIdentifier: "JBDatePickerPopover") as? JBDatePickerPopover
         datePickerPopover?.modalPresentationStyle = .popover
         
         if let popoverPresentationController = datePickerPopover?.popoverPresentationController {

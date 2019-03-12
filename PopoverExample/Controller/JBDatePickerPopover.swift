@@ -1,5 +1,5 @@
 //
-//  DatePickerPopover.swift
+//  JBDatePickerPopover.swift
 //  PopoverExample
 //
 //  Created by Chris Abbod on 3/12/19.
@@ -9,7 +9,7 @@
 import UIKit
 import JBDatePicker
 
-class DatePickerPopover: ViewController, JBDatePickerViewDelegate {
+class JBDatePickerPopover: ViewController, JBDatePickerViewDelegate {
    
     @IBOutlet var datePicker: JBDatePickerView!
     
