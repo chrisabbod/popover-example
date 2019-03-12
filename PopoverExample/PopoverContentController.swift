@@ -8,17 +8,18 @@
 
 import UIKit
 
-class PopoverContentController: UIViewController {
-    
+//Protocol Declaration
+protocol PopoverContentControllerDelegate:class {
+    func popoverContent(controller:PopoverContentController, didselectItem name:String)
+}
+//End Protocol
+
+class PopoverContentController:UIViewController {
     let datasourceArray = ["Car", "Bike", "Bus", "Van", "bicycle"]
     static let CELL_REUSE_ID = "POPOVER_CELL_REUSE_ID"
-    
+    var delegate:PopoverContentControllerDelegate? //declare a delegate
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
 }
 
@@ -36,4 +37,10 @@ extension PopoverContentController: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
+    //MARK: Tableview Delegate method
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedVehicle = datasourceArray[indexPath.row]
+        self.delegate?.popoverContent(controller: self, didselectItem: selectedVehicle)
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -36,9 +36,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="showButton" destination="coI-93-xTB" id="hZe-mh-4xS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="40" y="-663"/>
         </scene>
         <!--Popover Content Controller-->
         <scene sceneID="3Cc-lu-NWc">

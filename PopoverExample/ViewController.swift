@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
+    @IBOutlet weak var showButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,21 +19,21 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
 
     @IBAction func showPopoverButtonAction(_ sender: Any) {
         //get the button frame
-        /* 1 */
         let button = sender as? UIButton
         let buttonFrame = button?.frame ?? CGRect.zero
         
-        /* 2 */
-        //Configure the presentation controller (Using Storyboard ID for View Controller)
+        //Configure the presentation controller
         let popoverContentController = self.storyboard?.instantiateViewController(withIdentifier: "PopoverContentController") as? PopoverContentController
         popoverContentController?.modalPresentationStyle = .popover
         
-        /* 3 */
         if let popoverPresentationController = popoverContentController?.popoverPresentationController {
-            popoverPresentationController.permittedArrowDirections = .left  //Changes direction of popover arrow
+            popoverPresentationController.permittedArrowDirections = .up
             popoverPresentationController.sourceView = self.view
             popoverPresentationController.sourceRect = buttonFrame
             popoverPresentationController.delegate = self
+            /*Set the delegate */
+            popoverContentController?.delegate = self
+            
             if let popoverController = popoverContentController {
                 present(popoverController, animated: true, completion: nil)
             }
@@ -53,3 +55,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
 }
 
+extension ViewController:PopoverContentControllerDelegate {
+    func popoverContent(controller: PopoverContentController, didselectItem name: String) {
+        
+        showButton.setTitle(name, for: .normal)
+    }
+}
