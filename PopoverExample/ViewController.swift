@@ -28,7 +28,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         
         /* 3 */
         if let popoverPresentationController = popoverContentController?.popoverPresentationController {
-            popoverPresentationController.permittedArrowDirections = .left  //Changes direction popover can expand from
+            popoverPresentationController.permittedArrowDirections = .left  //Changes direction of popover arrow
             popoverPresentationController.sourceView = self.view
             popoverPresentationController.sourceRect = buttonFrame
             popoverPresentationController.delegate = self
