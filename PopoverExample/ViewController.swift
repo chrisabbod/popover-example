@@ -22,13 +22,13 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         let buttonFrame = button?.frame ?? CGRect.zero
         
         /* 2 */
-        //Configure the presentation controller
+        //Configure the presentation controller (Using Storyboard ID for View Controller)
         let popoverContentController = self.storyboard?.instantiateViewController(withIdentifier: "PopoverContentController") as? PopoverContentController
         popoverContentController?.modalPresentationStyle = .popover
         
         /* 3 */
         if let popoverPresentationController = popoverContentController?.popoverPresentationController {
-            popoverPresentationController.permittedArrowDirections = .up
+            popoverPresentationController.permittedArrowDirections = .left  //Changes direction popover can expand from
             popoverPresentationController.sourceView = self.view
             popoverPresentationController.sourceRect = buttonFrame
             popoverPresentationController.delegate = self
@@ -38,5 +38,18 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         }
     }
     
+    //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+    //UIPopoverPresentationControllerDelegate
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        
+    }
+    
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
+    }
 }
 
